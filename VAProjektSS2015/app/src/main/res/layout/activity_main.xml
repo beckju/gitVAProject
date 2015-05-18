@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:id="@+id/mainLayout"
+    android:background="@android:color/background_dark">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewMainWIndow"
+        android:id="@+id/TextViewMain"
+        android:textSize="15dp"
+        android:padding="35dp"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        /*VideoView
+            android:layout_width="wrap_content"
+            android:layout_height="290dp"
+            android:id="@+id/videoviewmain"/>*/
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:id="@+id/mainImageView"
+            android:onClick="onClickImageViewMain"
+            android:src="@drawable/smarthome"/>
+
+    </LinearLayout>
+
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+         android:padding="10dp">
+
+
+         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:onClick="onClickCameraMain"
+            android:id="@+id/CameratButtonMain"
+            android:layout_weight="2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ButtonMainHelp"
+            android:onClick="onClickHelpMain"
+            android:id="@+id/HelpButtonMain"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User"
+            android:onClick="onClickNewUserMain"
+            android:id="@+id/NewUserButtonMain"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+

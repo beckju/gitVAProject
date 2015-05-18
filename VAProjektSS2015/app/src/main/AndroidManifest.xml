@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.beckju.vaprojektss2015">
+
+        <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+
+            <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"/>
+            <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+            <uses-permission android:name="android.permission.BIND_WALLPAPER"/>
+            <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+            <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN"/>
+            <uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+            <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT"/>
+            <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+            <uses-permission android:name="android.permission.VIBRATE"/>
+            <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+            <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CommunicationLayout"
+            android:label="setup Communication"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".KeywordScreen"
+            android:label="Get Keyword"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".NewUserLayout"
+            android:label="createNewUser"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".NotificationActivity"
+            android:label="Notification"
+            android:theme="@style/AppTheme"/>
+
+            <activity android:name=".DoorSignalLayout"
+                android:label="newDoorSignal"
+                android:theme="@style/AppTheme"/>
+
+        </application>
+
+</manifest>

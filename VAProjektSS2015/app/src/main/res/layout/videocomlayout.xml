@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@android:color/background_dark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SmartHome - Communication"
+        android:textSize="15dp"
+        android:padding="35dp"
+        android:textColor="@android:color/white"
+        android:onClick="onClickplaySound"/>
+
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:id="@+id/videoviewcom"/>
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_gravity="center"
+         android:padding="10dp">
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/open_door_videocom"
+             android:id="@+id/opendoorvideocom"
+             android:layout_weight="2"
+             android:onClick="onClickOpenDoor"/>
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Mute"
+             android:id="@+id/mutesoundvidcom"
+             android:layout_weight="1"
+             android:onClick="onClickMuteSound"/>
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/cancle_videocom"
+             android:id="@+id/cancleVidCom"
+             android:layout_weight="2"
+             android:onClick="onClickCancleCommunication"/>
+
+     </LinearLayout>
+
+</LinearLayout>

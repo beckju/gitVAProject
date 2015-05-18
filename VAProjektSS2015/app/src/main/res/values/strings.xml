@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">VAProjektSS2015</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="textViewMainWIndow">SmartHome-MainWindow</string>
+    <string name="ButtonMainAccept">Accept</string>
+    <string name="ButtonMainHelp">Help</string>
+    <string name="ButtonMainDecline">Decline</string>
+    <string name="ExitSetting">Exit</string>
+    <string name="TextViewKeyword">Enter-Keyword:</string>
+    <string name="ButtonConfirmKeywordLayout">Confirm</string>
+    <string name="ButtonCancleKeywordLayout">cancle</string>
+    <string name="userKeywordMain">user keyword:</string>
+    <string name="enter_name_text_view">Enter your Name</string>
+    <string name="enter_name_button_text">Enter</string>
+    <string name="calling_activity_message">The calling activity was</string>
+    <string name="get_the_name_text_view">Go get the Name</string>
+    <string name="users_name_send_back">the users name was</string>
+    <string name="open_door_videocom">open door</string>
+    <string name="cancle_videocom">Cancle</string>
+    <string name="help_videocom">help</string>
+</resources>
