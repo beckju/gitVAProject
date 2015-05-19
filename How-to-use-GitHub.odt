@@ -1,0 +1,66 @@
+﻿Kurzanleitung für GitHub
+
+Setting up Git
+
+1. Download and install the latest version of Git. 
+2. On your computer, open your command line application. 
+3. Tell Git your name so your commits will be properly labeled. Type everything after the $ here:
+git config --global user.name "YOUR NAME"
+4. Tell Git the email address that will be associated with your Git commits. The email you specify should be the same one found in your email settings. To keep your email address hidden, see "Keeping your email address private".
+git config --global user.email "YOUR EMAIL ADDRESS"
+
+Caching your GitHub password in Git 
+
+If you're cloning GitHub repositories using HTTPS, you can use a credential helper to tell Git to remember your GitHub username and password every time it talks to GitHub.
+Tip: You need Git 1.7.10 or newer to use the credential helper.
+Turn on the credential helper so that Git will save your password in memory for some time. By default, Git will cache your password for 15 minutes.
+1. On the command line, enter the following:
+git config --global credential.helper cache
+# Set git to use the credential memory cache
+2. To change the default password cache timeout, enter the following:
+git config --global credential.helper 'cache --timeout=3600'
+# Set the cache to timeout after 1 hour (setting is in seconds)
+About remote repositories
+GitHub's collaborative approach to development depends on publishing commits from your local repository for other people to view, fetch, and update.
+A remote URL is Git's fancy way of saying "the place where your code is stored." That URL could be your repository on GitHub, or another user's fork, or even on a completely different server.
+You can only push to two types of URL addresses:
+An HTTPS URL like https://github.com/user/repo.git 
+An SSH URL, like git@github.com:user/repo.git 
+Git associates a remote URL with a name, and your default remote is usually called origin.
+For information on the differences between these URLs, see "Which remote URL should I use?"
+Creating remotes
+You can use the git remote set-url command to match a remote URL with a name. For example, you'd type the following in the command line:
+git remote set-url origin  <REMOTE_URL> 
+This associates the name origin with the REMOTE_URL.
+You can also use this command to change a remote URL.
+
+
+Adding an existing project to GitHub using the command line
+
+Create a new repository on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. 
+1. Open Terminal (for Mac users) or the command prompt (for Windows and Linux users).
+2. Change the current working directory to your local project.
+3. Initialize the local directory as a Git repository.
+git init
+4. Add the files in your new local repository. This stages them for the first commit. 
+git add .
+# Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
+1. Commit the files that you've staged in your local repository. 
+git commit -m 'First commit'
+
+# Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
+
+1. At the top of your GitHub repository's Quick Setup page, click 
+to copy the remote repository URL. 
+In Terminal, add the URL for the remote repository where your local repository will be pushed.
+git remote add origin remote repository URL
+# Sets the new remote
+git remote -v
+# Verifies the new remote URL
+
+Push the changes in your local repository to GitHub.
+git push origin master
+# Pushes the changes in your local repository up to the remote repository you specified as the origin
+
+
+→ Generell GitHub 'Help' sehr gut, mit Suchfunktion „How can we help“ 
