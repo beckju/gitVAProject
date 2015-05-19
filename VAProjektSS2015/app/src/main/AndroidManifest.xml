@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.beckju.vaprojektss2015">
 
+    <uses-sdk
+        android:targetSdkVersion="19.0.1"
+        android:minSdkVersion="7">
+
+        </uses-sdk>
+
         <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -46,6 +52,10 @@
 
             <activity android:name=".DoorSignalLayout"
                 android:label="newDoorSignal"
+                android:theme="@style/AppTheme"/>
+
+            <activity android:name=".TcpSignal"
+                android:label="TCP Signal"
                 android:theme="@style/AppTheme"/>
 
         </application>

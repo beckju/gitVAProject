@@ -7,16 +7,16 @@
         android:orderInCategory="100"
         app:showAsAction="never" />
 
-    <item android:id="@+id/tryNotification"
-        android:title="Notification"
-        android:showAsAction="always"
-        android:onClick="onClickMenuNotification"
-        android:orderInCategory="99"/>
-
     <item android:id="@+id/DoorSignal"
         android:title="Door Signal"
         android:showAsAction="never"
         android:onClick="onClickDoorSignal"
         android:orderInCategory="102" />
+
+    <item android:id="@+id/TcpSignal"
+        android:title="TcpSignal"
+        android:showAsAction="never"
+        android:onClick="onClickTcpConnection"
+        android:orderInCategory="101"/>
 
 </menu>

@@ -20,6 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_margin="10dp"
         android:layout_gravity="center">
 
         <TextView
@@ -27,12 +28,14 @@
             android:layout_height="wrap_content"
             android:padding="25dp"
             android:text="Name:"
+            android:layout_margin="10dp"
             android:textColor="@android:color/white"/>
 
         <EditText
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:padding="25dp"
+            android:layout_margin="10dp"
             android:background="@android:color/darker_gray"/>
 
         </LinearLayout>
@@ -41,6 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_margin="10dp"
         android:layout_gravity="center">
 
         <TextView
@@ -48,12 +52,14 @@
             android:layout_height="wrap_content"
             android:padding="25dp"
             android:text="Keyword:"
+            android:layout_margin="10dp"
             android:textColor="@android:color/white"/>
 
         <EditText
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:padding="25dp"
+            android:layout_margin="10dp"
             android:background="@android:color/darker_gray"/>
 
         </LinearLayout>
@@ -62,6 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_margin="10dp"
         android:layout_gravity="center_horizontal">
 
         <TextView
@@ -69,12 +76,14 @@
             android:layout_height="wrap_content"
             android:padding="25dp"
             android:text="Confirm KW"
+            android:layout_margin="10dp"
             android:textColor="@android:color/white"/>
 
         <EditText
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:padding="25dp"
+            android:layout_margin="10dp"
             android:background="@android:color/darker_gray"/>
 
         </LinearLayout>
@@ -91,12 +100,14 @@
             android:gravity="center"
             android:text="enter"
             android:id="@+id/newUserEnter"
+            android:layout_margin="10dp"
             android:onClick="onClickNewUserEnter"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="cancel"
+            android:layout_margin="10dp"
             android:id="@+id/newUserCancle"
             android:onClick="onClickNewUserCancle"/>
 

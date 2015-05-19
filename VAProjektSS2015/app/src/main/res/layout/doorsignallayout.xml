@@ -14,7 +14,7 @@
             android:padding="35dp"
             android:textColor="@android:color/white"/>
 
-        <TextView
+       <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
@@ -36,12 +36,30 @@
             android:layout_height="250dp"
             android:id="@+id/doorSignalVideoView"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="12dp"
-            android:drawableBottom="@android:drawable/sym_call_outgoing"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"
             android:background="@android:color/holo_red_dark"
+            android:drawableBottom="@android:drawable/btn_dialog"
+            android:onClick="onClickDeclineSignal"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:padding="18dp"
+            android:background="@android:color/holo_green_dark"
+            android:drawableBottom="@android:drawable/checkbox_on_background"
             android:onClick="onClickAcceptSignal"/>
+
+    </LinearLayout>
 
     </LinearLayout>

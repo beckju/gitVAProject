@@ -62,6 +62,8 @@ public class CommunicationLayout extends Activity {
         return audioState;
     }
 
+
+    //Play sample musik - sound test
     public void GlobalAudio(int mode) {
 
         MediaPlayer audioTest = MediaPlayer.create(CommunicationLayout.this, R.raw.close); // declared fundtion to use as global --> no global in Java
@@ -94,12 +96,11 @@ public class CommunicationLayout extends Activity {
 
         GlobalAudio(2);
 
-        String CancleCommunicationInfo = "Connection was terminated";
-        Toast.makeText(this, CancleCommunicationInfo, Toast.LENGTH_SHORT).show();
+        Intent goBackToMain = new Intent(this, MainActivity.class);
 
-        finish();
+        final  int result = 1;
 
-        System.exit(0);
+        startActivity(goBackToMain);
     }
 
     public void onClickplaySound(View view) {
