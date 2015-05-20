@@ -30,7 +30,7 @@ import android.widget.VideoView;
  *
  * Für eingehendes Brief-Signal --> Pop-Up und beim Wegklicken Notification
  */
-
+//wasd
 
 public class MainActivity extends ActionBarActivity {
 
